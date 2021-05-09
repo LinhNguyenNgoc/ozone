@@ -5,10 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-mb.css">
 	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+	<script src="js/jquery-1.11.0.min.js"></script>
+
 	<style type="text/css">
 	    html, body {
 	      margin: 0;
@@ -54,9 +59,10 @@
 	    }
 
   </style>
+ 
 </head>
 <body>
-	<header>		
+	<header class="wrap-header">		
 		<div class="info-header">
 				<div class="contact-header">
 					<div class="detail-contact">
@@ -99,6 +105,48 @@
 					</ul>
 			</div>
 		</div>
+		<div class="info-slider">
+			<p><span class="style-title">THAY ĐỔI THÓI QUEN SỬ DỤNG VẬT LIỆU TỰ NHIÊN TRONG XÂY DỰNG DÂN DỤNG</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<div class="more-header">
+				<div class="button-custom"><a href="">Xem thêm</a></div>
+			</div>
+		</div>
+	</header>
+
+	<header class="wrap-header-mb">
+		<div class="info-header-mb">
+				<div class="toggle-mb">
+					<div class="logo-mb">
+						<img src="images/logo.svg" alt="">
+						<div class="slogan"><p>Materials Importer & Constructon</p></div>
+					</div>
+					<div class="detail-contact-mb">
+						<div class="icon-contact"><img src="images/phone.svg" alt=""></div>
+						<div class="more-info">
+							<p class="minfo-detail">028 6652 3966</p>
+						</div>
+					</div>
+					<div class="detail-contact-mb">
+						<div class="icon-contact"><img src="images/mail.svg" alt=""></div>
+						<div class="more-info">
+							<p class="minfo-detail">info@ozonejsc.vn</p>
+						</div>
+					</div>
+					<div class="fas fa-bars"></div>
+				</div>
+				<div class="info-menu-mb">
+					<ul>
+						<li><a href="">TRANG CHỦ</a></li>
+						<li><a href="">DỊCH VỤ</a></li>
+						<li><a href="">ALBUM ẢNH</a></li>
+						<li><a href="">CHỨNG NHẬN</a></li>
+						<li><a href="">LIÊN HỆ</a></li>
+					</ul>
+				</div>
+				
+		</div>
+		
+		
 		<div class="info-slider">
 			<p><span class="style-title">THAY ĐỔI THÓI QUEN SỬ DỤNG VẬT LIỆU TỰ NHIÊN TRONG XÂY DỰNG DÂN DỤNG</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			<div class="more-header">
@@ -345,7 +393,13 @@
   		autoplay: false,
   		autoplaySpeed: 1500,
       });
+
+      $('.fa-bars').click(function(){
+  			$('.info-menu-mb').slideToggle();
+  		});
     });
 </script>
+
+
 </body>
 </html>

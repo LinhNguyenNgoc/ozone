@@ -25,6 +25,9 @@ header {
 	background-position: center;
 }
 
+.wrap-header-mb {
+	display: none;
+}
 
 .info-header {
 	display: flex;
