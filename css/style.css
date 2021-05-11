@@ -61,6 +61,10 @@ header {
 	max-height: 50px;
 	justify-content: flex-end;
 	background: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
 }
 .header-skew {
     background: white;
@@ -120,6 +124,9 @@ header {
 	font-family: Muli;
 	font-size: 14px;
 }
+.info-menu ul li a:hover {
+	opacity: 0.6;
+}
 
 .info-slider {
 	margin-top: 98px;
@@ -140,28 +147,74 @@ header {
 	font-size: 16px;
 	line-height: 22px;
 }
+.info-right-social{
+	margin-top: -31%;
+	margin-left: 80%;
+	position: absolute;
+}
+.info-right-social .fa-twitter,.fa-facebook-f,.fa-instagram {
+	font-weight: 400;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 45px;
+	font-size: 24px;
+	
+}
+.info-right-social .fa-twitter:hover,.fa-facebook-f:hover,.fa-instagram:hover {
+	opacity: 0.6;
+}
+.info-right-social a:hover {
+	text-decoration: none;
+}
+.header-scroll {
+	width: 100%;
+	margin-left: 50%;
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid white;
+}
+.header-scroll:hover {
+	opacity: 0.6;
+}
+.header-scroll img {
+	padding-top: 20px;
+	margin-left: -7px;
+	cursor: pointer;
+	position: absolute;
+}
 .more-header {
 	padding-top: 55px;
 	padding-bottom: 239px;
 }
 
-.button-custom a {
+.button-custom {
 	display: inline-block;
-	text-decoration: none;
-	padding: 14px 51px 14px 51px;
+	
+	padding: 14px 0px 14px 51px;
 	background-color: #EE1F23;
 	color: white;
 	font-size: 16px;
+}
+.button-custom:hover {
+	opacity: 0.6;
+}
+
+.button-custom a {
+	text-decoration: none;
+
 }
 
 .button-custom::after {
   content: "→";
   padding: 14px 14px;
-  background-color: white;
+  background-color: #F1F1F1;
   font-size: 16px;
   color: #303030;
   font-weight: bold;
-  margin-left: -5px;
+  margin-left: 51px;
 }
 
 .about-us {
@@ -252,6 +305,9 @@ header {
   	background-size: cover;
   	margin-top: 110px;
   	margin-bottom: 110px;
+  	display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .container-service {
@@ -262,10 +318,12 @@ header {
 	align-content: flex-start;
 	padding-top: 120px;
 	padding-bottom: 120px;
+	max-width: 970px;
 }
 .service-thumbnail {
-	width: 485px;
+	width: 50%;
 	background-color: white;
+	min-height: 291px;
 }
 
 .service-thumbnail:nth-child(3), .service-thumbnail:nth-child(4) {
@@ -287,7 +345,7 @@ header {
 	padding-left: 52px;
 }
 .service-title  img {
-	margin-right: 238px;
+	margin-right: 150px;
 	margin-top: 48px;
 }
 .service-title p {
@@ -349,13 +407,26 @@ header {
 .content-news {
 	display: flex;
 	justify-content: center;
+	color: #555555;
 }
 .news-detail {
 	margin-right: 30px;
 	width: 100%;
 	max-width: 370px;
-	box-shadow: 0px 0px 30px rgba(103, 92, 92, 0.25);
+	color: #555555;
 }
+.news-detail a {
+	color: #555555;
+}
+.news-detail:hover {
+	box-shadow: 0px 0px 30px rgba(103, 92, 92, 0.25);
+	opacity: 0.6;
+}
+.news-detail a:hover {
+	color: #555555;
+	text-decoration: none;
+}
+
 .news-detail:nth-child(3) {
 	margin-right: 0px;
 }
@@ -371,17 +442,21 @@ header {
 	font-size: 22px;
 	line-height: 30px;
 	margin-bottom: 14px;
-	
 }
 .news-detail-content {
 	padding-left: 27px;
-	
 }
 .news-detail-content {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 17px;
-	
+}
+.news-bottom-content a {
+	color: black;
+	text-decoration: none;
+}
+.news-bottom-content a:hover {
+	opacity: 0.6;
 }
 
 .news-bottom-content {
@@ -472,9 +547,11 @@ header {
 }
 .content-customer {
 	display: flex;
-
 }
-
+.slick-dots {
+	text-align: left !important;
+	margin-left: 68px !important;
+}
 
 .customer-detail-content::before {
   	content: "“";
@@ -592,6 +669,13 @@ header {
 	margin-right: 152px;
 	padding-top: 110px;
 }
+.center-more-footer ul {
+	margin-left: -20px;
+}
+.center-more-footer ul li a:hover {
+	opacity: 0.6;
+	text-decoration: none;
+}
 .title-menu-footer {
 	font-weight: bold;
 	font-size: 20px;
@@ -632,12 +716,18 @@ header {
 	display: flex;
 	justify-content: center;
 }
-.container-end-footer img {
-	width: 100%;
+.container-end-footer a {
 	margin-bottom: 29.54px;
 	margin-right: 64px;
 	margin-top: 55px;
 	margin-bottom: 42px;
+}
+.container-end-footer a:hover {
+	opacity: 0.6;
+}
+.container-end-footer img {
+	width: 100%;
+	
 }
 .container-end-footer img:last-child {
 	margin-right: 0px;

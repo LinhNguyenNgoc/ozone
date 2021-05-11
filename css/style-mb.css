@@ -38,6 +38,10 @@ img {
 	
 	.detail-contact-mb {
 		max-width: 25%;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
 	}
 	.minfo-detail {
 		word-wrap: break-word;
@@ -107,13 +111,13 @@ img {
 	}
 
 	.button-custom::after {
-	  content: "→";
-	  padding: 8px 8px;
-	  background-color: white;
-	  font-size: 16px;
-	  color: #303030;
-	  font-weight: bold;
-	  margin-left: -3px;
+	   content: "→";
+		padding: 14px 14px;
+		background-color: #F1F1F1;
+		font-size: 16px;
+		color: #303030;
+		font-weight: bold;
+		margin-left: 51px;
 	}
 
 	.about-us {
@@ -210,10 +214,14 @@ img {
 		align-content: flex-start;
 		padding-top: 60px;
 		padding-bottom: 60px;
+		max-width: 100%;
+		flex-direction: column;
 	}
 	.service-thumbnail {
-		max-width: 85%;
+		max-width: 100%;
+		width: 100%;
 		background-color: white;
+		margin: 5%;
 	}
 
 	.service-thumbnail:nth-child(3), .service-thumbnail:nth-child(4) {
