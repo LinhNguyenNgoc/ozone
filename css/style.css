@@ -103,6 +103,7 @@ header {
 }
 .info-menu {
 	display: flex;
+	border-bottom: 1px solid #E0E0E0;
 }
 .info-menu ul {
 	display: flex;
@@ -110,19 +111,24 @@ header {
 	justify-content: space-between; 
 	list-style-type: none;
 	margin: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	
 	width: 620px;
 }
 .info-menu ul li {
 	text-align: center;
 	width: 214px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .info-menu ul li a {
 	text-decoration: none;
 	color: white;
 	font-family: Muli;
 	font-size: 14px;
+}
+.info-menu ul li:hover {
+	border-bottom: 2px solid #C1F8FF;
+	
 }
 .info-menu ul li a:hover {
 	opacity: 0.6;
