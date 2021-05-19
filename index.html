@@ -13,8 +13,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style-mb.css">
 	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+	<link rel='stylesheet' type="text/css" href="css/animate.css">
 	<script src="js/jquery-1.11.0.min.js"></script>
-
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript">
+	  new WOW().init();
+	</script> 
 	<style type="text/css">
 	    html, body {
 	      margin: 0;
@@ -63,35 +67,41 @@
  
 </head>
 <body>
-	<header class="wrap-header">		
+	<header class="wrap-header wow fadeInUp" data-wow-duration="1.5s">		
 		<div class="info-header">
+			<div class="wrap-contact-header">
 				<div class="contact-header">
 					<div class="detail-contact">
-						<div class="icon-contact"><img src="images/phone.svg" alt=""></div>
+						<a href="tel:02866523966"><div class="icon-contact"><img src="images/phone.svg" alt=""></div></a>
 						<div class="more-info">
-							<p>HOTLINE</p>
-							<p class="minfo-detail">028 6652 3966</p>
+							<a href="tel:02866523966"><p>HOTLINE</p></a>
+							<a href="tel:02866523966"><div class="minfo-detail"><p>028 6652 3966</p></a></div>
 						</div>
 					</div>
 					<div class="detail-contact">
-						<div class="icon-contact"><img src="images/mail.svg" alt=""></div>
+						<a href="mailto:info@ozonejsc.vn"><div class="icon-contact"><img src="images/mail.svg" alt=""></div></a>
 						<div class="more-info">
-							<p>EMAIL</p>
-							<p class="minfo-detail">info@ozonejsc.vn</p>
+							<a href="mailto:info@ozonejsc.vn"><p>EMAIL</p></a>
+							<a href="mailto:info@ozonejsc.vn"><div class="minfo-detail"><p>info@ozonejsc.vn</p></div></a>
 						</div>
 					</div>
 					<div class="detail-contact">
 						<div class="icon-contact"><img src="images/oclock.svg" alt=""></div>
 						<div class="more-info">
 							<p>GIỜ LÀM VIỆC</p>
-							<p class="minfo-detail">Mon. - Fri. 08AM - 18PM</p>
+							<div class="minfo-detail"><p>Mon. - Fri. 08AM - 18PM</p></div>
 						</div>
 					</div>
-				</div>	
+				</div>
+			</div>	
 				<div class="header-skew"></div>
-				<div class="logo">
-					<img src="images/logo.svg" alt="">
-					<div class="slogan"><p>Materials Importer & Constructon</p></div>
+				<div class="wrap-logo">
+					
+						<div class="logo">
+							<a href="#"><img src="images/logo.svg" alt=""></a>
+							<a href="#"><div class="slogan"><p>Materials Importer & Constructon</p></div></a>
+						</div>
+
 				</div>
 		</div>
 		
@@ -117,31 +127,22 @@
 			<a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 			<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 		</div>
-		<div class="header-scroll">
+		<a href="#" id="aboutUsLink"><div class="header-scroll">
              <img src="images/nav-down.svg" alt="">
-         </div>
+         </div></a>
 	</header>
 
 	<header class="wrap-header-mb">
 		<div class="info-header-mb">
 				<div class="toggle-mb">
 					<div class="logo-mb">
-						<img src="images/logo.svg" alt="">
-						<div class="slogan"><p>Materials Importer & Constructon</p></div>
+						<a href="#"><img src="images/logo.svg" alt=""></a>
 					</div>
 					<div class="detail-contact-mb">
-						<div class="icon-contact"><img src="images/phone.svg" alt=""></div>
-						<div class="more-info">
-							<p class="minfo-detail">028 6652 3966</p>
-						</div>
+						<a href="tel:02866523966"><div class="icon-contact"><img src="images/phone.svg" alt=""></div></a>
+						<a href="mailto:info@ozonejsc.vn"><div class="icon-contact"><img src="images/mail.svg" alt=""></div></a>
+						<div class="fas fa-bars"></div>
 					</div>
-					<div class="detail-contact-mb">
-						<div class="icon-contact"><img src="images/mail.svg" alt=""></div>
-						<div class="more-info">
-							<p class="minfo-detail">info@ozonejsc.vn</p>
-						</div>
-					</div>
-					<div class="fas fa-bars"></div>
 				</div>
 				<div class="info-menu-mb">
 					<ul>
@@ -163,8 +164,7 @@
 			</div>
 		</div>
 	</header>
-	
-	<section class="about-us">
+	<section id="aboutUs" class="about-us wow fadeInUp" data-wow-duration="1.5s">
 		<div class="container">
 			<div class="left-about">
 				<img src="images/aboutUs.jpg" alt="">
@@ -195,10 +195,10 @@
 	</section>
 	<section class="service">
 		<div class="container-service">
-			<div class="service-thumbnail">
+			<div class="service-thumbnail wow fadeInUpBig" data-wow-duration="1s">
 				<div class="service-title">
 					<img src="images/ic-service1.svg" alt="">
-					<p>1</p>
+					<img src="images/number1.png" alt="">
 				</div>
 				<div class="service-content">
 					<p>1. TƯ VẤN KHÁCH HÀNG</p>
@@ -208,10 +208,10 @@
 	                 </ul>
 	            </div>
 			</div>
-			<div class="service-thumbnail">
+			<div class="service-thumbnail wow fadeInUpBig" data-wow-duration="1s">
 				<div class="service-title">
 					<img src="images/ic-service2.svg" alt="">
-					<p>2</p>
+					<img src="images/number2.png" alt="">
 				</div>
 				<div class="service-content">
 					<p>2. TÌM KIẾM VẬT LIỆU</p>
@@ -221,10 +221,10 @@
 	                 </ul>
 	            </div>
 			</div>
-			<div class="service-thumbnail">
+			<div class="service-thumbnail wow fadeInUpBig" data-wow-duration="1.5s">
 				<div class="service-title">
 					<img src="images/ic-service3.svg" alt="">
-					<p>3</p>
+					<img src="images/number3.png" alt="">
 				</div>
 				<div class="service-content">
 					<p>3. TRÌNH MẪU - GIẢI TRÌNH</p>
@@ -234,10 +234,10 @@
 	                 </ul>
 	            </div>
 			</div>
-			<div class="service-thumbnail">
+			<div class="service-thumbnail wow fadeInUpBig" data-wow-duration="1.5s">
 				<div class="service-title">
 					<img src="images/ic-service4.svg" alt="">
-					<p>4</p>
+					<img src="images/number4.png" alt="">
 				</div>
 				<div class="service-content">
 					<p>4. GIAO HÀNG - THANH TOÁN</p>
@@ -253,13 +253,13 @@
 	
 	<section class="news">
 		<div class="container-news">
-			<div class="header-news">
+			<div class="header-news wow fadeInUp" data-wow-duration="1.5s">
 				<p><span class="news-title">OZONE COMPANY</span>TIN TỨC</p>
 			</div>
-			<div class="content-news">
+			<div class="content-news wow fadeInUp" data-wow-duration="1.5s">
 				<div class="news-detail">
 					<a href="#">
-					<img src="images/new1.jpg" alt="">
+					<div class="wrap-content-news-img"><img src="images/new1.jpg" alt=""></div>
 					<p class="news-detail-content"><span class="news-detail-header">Can your business become better with new technology?</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
 					<div class="news-bottom-content">
 						<div class="news-calendar">
@@ -274,7 +274,7 @@
 				</div>
 				<div class="news-detail">
 					<a href="#">
-					<img src="images/new1.jpg" alt="">
+					<div class="wrap-content-news-img"><img src="images/new1.jpg" alt=""></div>
 					<p class="news-detail-content"><span class="news-detail-header">Can your business become better with new technology?</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
 					<div class="news-bottom-content">
 						<div class="news-calendar">
@@ -289,7 +289,7 @@
 				</div>
 				<div class="news-detail">
 					<a href="#">
-					<img src="images/new1.jpg" alt="">
+					<div class="wrap-content-news-img"><img src="images/new1.jpg" alt=""></div>
 					<p class="news-detail-content"><span class="news-detail-header">Can your business become better with new technology?</span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
 					<div class="news-bottom-content">
 						<div class="news-calendar">
@@ -309,41 +309,72 @@
 		</div>
 	</section>
 
-	<section class="customer">
+	<section class="customer wow fadeInUp" data-wow-duration="1.5s">
 		<div class="header-customer">
 			<p><span class="customer-title">OZONE COMPANY</span>KHÁCH HÀNG</p>
 		</div>
 		<div class="customer-detail">
-			<img src="images/detail-client.jpg" alt="">
-			<section class="regular slider">
-				<div>
-					<p class="customer-detail-content">1 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+			<div class="regular slider">
+				<div class="wrap-thumbnail">
+					<div class="wrap-thumbnail-left">
+						<img src="images/detail-client.jpg" alt="">
+						<div class="insert-info">
+		                  <p><span>JONATHAN ADAMS <small class="mr-insert-info">Founder, Great Wall Ltd. </small></span></p>
+		                </div>
+					</div>
+					<div class="thumbnail-content">
+						<img src="images/quotes.png" alt="">
+						<p class="customer-detail-content">1 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+					</div>
 				</div>
-				<div>
-					
-					<p class="customer-detail-content">2 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+				<div class="wrap-thumbnail">
+					<div class="wrap-thumbnail-left">
+						<img src="images/detail-client.jpg" alt="">
+						<div class="insert-info">
+		                  <p><span>JONATHAN ADAMS <small class="mr-insert-info">Founder, Great Wall Ltd. </small></span></p>
+		                </div>
+					</div>
+					<div class="thumbnail-content">
+						<img src="images/quotes.png" alt="">
+						<p class="customer-detail-content">2 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+					</div>
 				</div>
-				<div>
-					
-					<p class="customer-detail-content">3 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+				<div class="wrap-thumbnail">
+					<div class="wrap-thumbnail-left">
+						<img src="images/detail-client.jpg" alt="">
+						<div class="insert-info">
+		                  <p><span>JONATHAN ADAMS <small class="mr-insert-info">Founder, Great Wall Ltd. </small></span></p>
+		                </div>
+					</div>
+					<div class="thumbnail-content">
+						<img src="images/quotes.png" alt="">
+						<p class="customer-detail-content">3 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+					</div>
 				</div>
-				<div>
-					
-					<p class="customer-detail-content">4 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+				<div class="wrap-thumbnail">
+					<div class="wrap-thumbnail-left">
+						<img src="images/detail-client.jpg" alt="">
+						<div class="insert-info">
+		                  <p><span>JONATHAN ADAMS <small class="mr-insert-info">Founder, Great Wall Ltd. </small></span></p>
+		                </div>
+					</div>
+					<div class="thumbnail-content">
+						<img src="images/quotes.png" alt="">
+						<p class="customer-detail-content">4 We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors. We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.We challenged to complete the project in just over five months. This was an incredibly fast-track schedule, given that retrofits of this scale, as we were told by our own advisors.</p>
+					</div>
 				</div>
-			</section>
-			
+			</div>
 		</div>			
 		<div class="customer-footer">
-			<img src="images/logo-client1.jpg" alt="">
-			<img src="images/logo-client2.jpg" alt="">
-			<img src="images/logo-client3.jpg" alt="">
-			<img src="images/logo-client4.jpg" alt="">
-			<img src="images/logo-client5.jpg" alt="">
+			<a href=""><img src="images/logo-client1.jpg" alt=""></a>
+			<a href=""><img src="images/logo-client2.jpg" alt=""></a>
+			<a href=""><img src="images/logo-client3.jpg" alt=""></a>
+			<a href=""><img src="images/logo-client4.jpg" alt=""></a>
+			<a href=""><img src="images/logo-client5.jpg" alt=""></a>
 		</div>
 	</section>
 	
-	<section class="contact-footer">
+	<section class="contact-footer wow fadeInUp" data-wow-duration="1.5s">
 		<div class="contact-footer-left"><p>LIÊN HỆ</p></div>
 		<div class="contact-footer-right">
 			<div class="detail-footer-contact">
@@ -351,12 +382,12 @@
 				<p>No. 22, N7 street, Quarter 3, Cat Lai Ward, District 2, Ho Chi Minh City</p>
 			</div>
 			<div class="detail-footer-contact">
-				<img src="images/ic_hotline.svg" alt="">
-				<p>028 6652 3966</p>
+				<a href="tel:02866523966"><img src="images/ic_hotline.svg" alt=""></a>
+				<a href="tel:02866523966"><p>028 6652 3966</p></a>
 			</div>
 			<div class="detail-footer-contact">
-				<img src="images/ic_email.svg" alt="">
-				<p>info@ozonejsc.vnskyqueen.vn</p>
+				<a href="mailto:info@ozonejsc.vnskyqueen.vn"><img src="images/ic_email.svg" alt=""></a>
+				<a href="mailto:info@ozonejsc.vnskyqueen.vn"><p>info@ozonejsc.vnskyqueen.vn</p></a>
 			</div>
 			<div class="detail-footer-contact">
 				<img src="images/ic_browser.svg" alt="">
@@ -365,9 +396,9 @@
 		</div>
 	</section>
 
-	<section class="more-footer">
+	<section class="more-footer wow fadeInUp" data-wow-duration="1.5s">
 		<div class="left-more-footer">
-			<img src="images/logo-footer.svg" alt="">
+			<a href="#"><img src="images/logo-footer.svg" alt=""></a>
 			<p class="content-left-footer"><span class="title-left-footer">JOINT STOCK COMPANY</span>We always strive for growth and development as StylemixThemes. We don't want to have a large team, we want to have a team that works in unity. Our slogan is "Every day is the last day".</p>
 		</div>
 		<div class="center-more-footer">
@@ -383,9 +414,20 @@
 		<div class="right-more-footer">
 			<p class="title-form-footer">Đăng ký nhận tin</p>
 			<p class="content-form-footer">Nhập địa chỉ email của bạn để nhận thông tin ưu đãi mới nhất</p>
+			
+				<form action="#">
+					<div class="area-formSearch">
+					  <input type="text" id="fsearch" name="fsearch" placeholder="Enter Email Address">
+					  <a href=""><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</form>
+			
+			<div class="area-googlemaps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.0003035497402!2d108.19372991433664!3d16.06547404380701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219ab5776c6c7%3A0x98262200aef24f8f!2zMjEzIMSQaeG7h24gQmnDqm4gUGjhu6csIENow61uaCBHacOhbiwgVGhhbmggS2jDqiwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1621179299978!5m2!1svi!2s" width="250" height="130" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
 		</div>
 	</section>
-	<section class="end-footer">
+	<section class="end-footer wow fadeInUp" data-wow-duration="1.5s">
 		<div class="container-end-footer">
 			<a href="#"><img src="images/ic-footer-twiter.svg" alt=""></a>
 			<a href="#"><img src="images/ic-footer-face.svg" alt=""></a>
@@ -400,20 +442,37 @@
   	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
 	<script type="text/javascript">
-    $(document).on('ready', function() {
-      $(".regular").slick({
-        dots: true,
-        slidesToShow: 1,
-  		slidesToScroll: 1,
-  		autoplay: false,
-  		autoplaySpeed: 1500,
-      });
 
-      $('.fa-bars').click(function(){
-  			$('.info-menu-mb').slideToggle();
-  		});
-    });
-</script>
+	    $(document).on('ready', function() {
+	      $(".regular").slick({
+	        dots: true,
+	        slidesToShow: 1,
+	  		slidesToScroll: 1,
+	  		autoplay: false,
+	  		autoplaySpeed: 1500,
+	      });
+
+	      $('.fa-bars').click(function(){
+	  			$('.info-menu-mb').slideToggle();
+	  		});
+	    });
+
+	    function goToByScroll(id) {
+		    // Remove "link" from the ID
+		    id = id.replace("link", "");
+		    // Scroll
+		    $('html,body').animate({
+		        scrollTop: $("#" + id).offset().top
+		    }, 'slow');
+		}
+
+		$("#aboutUsLink").click(function(e) {
+		    // Prevent a page reload when a link is pressed
+		    e.preventDefault();
+		    // Call the scroll function
+		    goToByScroll(this.id);
+		});
+	</script>
 
 
 </body>

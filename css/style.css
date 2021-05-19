@@ -17,7 +17,9 @@ img {
 	vertical-align: bottom;
 	max-width: 100%;
 }
-
+a:hover {
+	text-decoration: none;
+}
 header {
 	background-image: url("../images/banner.svg");
 	background-repeat: no-repeat;
@@ -37,22 +39,33 @@ header {
 	
 
 }
-
+.wrap-logo {
+	position: absolute;
+	width: 45%;
+}
 .logo {
 	font-size: 13px;
 	line-height: 18px;
-	width: 241px;
-	/*margin-top: 10px;
-	/*transform: perspective(50px) rotateX(349deg);
-    transform-origin: left center;*/
-    /*margin-right: 264px;
-	/*transform: translateY(200px);*/
-    margin-left: 87px;
-    position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    /*margin-right: 54%;*/
+}
+.logo img {
+	max-width: 127px;
+    width: 127px;
 }
 .logo p {
-	width: 241px;
-	margin-right: 50px;
+	width: 242px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	color: #2C4985;
+}
+.wrap-contact-header {
+	background: white;
 }
 .contact-header {
 	display: flex;
@@ -60,18 +73,18 @@ header {
 	padding-bottom: 50px;
 	max-height: 50px;
 	justify-content: flex-end;
-	background: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 17px;
+	margin-right: 4%;
 }
 .header-skew {
     background: white;
     transform: perspective(50px) rotateX(350deg);
     transform-origin: left center;
     min-height: 50px;
-    margin-right: 952px;
+    margin-right: 65%;
     
 }
 .detail-contact {
@@ -80,6 +93,9 @@ header {
 	line-height: 17px;
 	width: 207px;
 	margin-right: 26px;
+	align-items: center;
+    margin-top: 21px;
+    margin-bottom: 19px;
 }
 .detail-contact:last-child {
 	margin-right: 0px;
@@ -88,22 +104,33 @@ header {
 .icon-contact {
 	margin-right: 10px;
 }
-.detail-contact p {
+.more-info p {
 	width: 171px;
 	margin: 0;
 	padding-top: 2px;
 	padding-bottom: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #1A3761;
 }
-.minfo-detail {
+.more-info .minfo-detail p {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
 	color: #EE1F23;
 }
+
 
 .container-menu {
 	margin:0 auto;
 }
 .info-menu {
 	display: flex;
-	border-bottom: 1px solid #E0E0E0;
+	border-bottom: 1px solid #7f8c8d;
 }
 .info-menu ul {
 	display: flex;
@@ -111,32 +138,37 @@ header {
 	justify-content: space-between; 
 	list-style-type: none;
 	margin: auto;
-	
+	padding-top: 13px;
 	width: 620px;
 }
 .info-menu ul li {
 	text-align: center;
 	width: 214px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	
 }
 .info-menu ul li a {
 	text-decoration: none;
 	color: white;
 	font-family: Muli;
-	font-size: 14px;
+	font-size: 14px;	
 }
-.info-menu ul li:hover {
-	border-bottom: 2px solid #C1F8FF;
-	
+.info-menu ul li a:after {
+	display:block;
+  	content: '';
+  	border-bottom: solid 2px #C1F8FF;
+  	transform: scaleX(0);  
+  	transition: transform 500ms ease-in-out;
+  	padding-top: 15px;
 }
-.info-menu ul li a:hover {
-	opacity: 0.6;
+
+.info-menu ul li a:hover:after {
+	transform: scaleX(0.8);
 }
+
 
 .info-slider {
 	margin-top: 98px;
-	margin-left: 85px;
+	margin-left: 130px;
 	color: white;
 	width: 738px;
 }
@@ -155,7 +187,7 @@ header {
 }
 .info-right-social{
 	margin-top: -31%;
-	margin-left: 80%;
+	margin-left: 95%;
 	position: absolute;
 }
 .info-right-social .fa-twitter,.fa-facebook-f,.fa-instagram {
@@ -165,10 +197,11 @@ header {
 	flex-direction: column;
 	margin-bottom: 45px;
 	font-size: 24px;
-	
+	transition: transform 0.5s ease 0s, opacity 0.5s ease 0.5s;
 }
 .info-right-social .fa-twitter:hover,.fa-facebook-f:hover,.fa-instagram:hover {
-	opacity: 0.6;
+	transform: rotate(45deg);
+  	opacity: 0.6;
 }
 .info-right-social a:hover {
 	text-decoration: none;
@@ -181,16 +214,20 @@ header {
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-bottom: 40px solid white;
+    transition: opacity .5s ease-out;
 }
 .header-scroll:hover {
 	opacity: 0.6;
+	
 }
+
 .header-scroll img {
 	padding-top: 20px;
 	margin-left: -7px;
 	cursor: pointer;
 	position: absolute;
 }
+
 .more-header {
 	padding-top: 55px;
 	padding-bottom: 239px;
@@ -198,19 +235,19 @@ header {
 
 .button-custom {
 	display: inline-block;
-	
 	padding: 14px 0px 14px 51px;
 	background-color: #EE1F23;
 	color: white;
 	font-size: 16px;
+	transition: opacity .5s ease-out;
 }
 .button-custom:hover {
 	opacity: 0.6;
+	padding: 14px 0px 14px 53px;
 }
 
 .button-custom a {
 	text-decoration: none;
-
 }
 
 .button-custom::after {
@@ -222,6 +259,7 @@ header {
   font-weight: bold;
   margin-left: 51px;
 }
+
 
 .about-us {
 	background-color: white;
@@ -329,7 +367,7 @@ header {
 .service-thumbnail {
 	width: 50%;
 	background-color: white;
-	min-height: 291px;
+	min-height: 301px;
 }
 
 .service-thumbnail:nth-child(3), .service-thumbnail:nth-child(4) {
@@ -348,19 +386,11 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding-bottom: 7px;
-	padding-left: 52px;
+	margin-left: 54px;
+	margin-right: 58px;
+	margin-top: 35px;
 }
-.service-title  img {
-	margin-right: 150px;
-	margin-top: 48px;
-}
-.service-title p {
-	color: #E0E0E0;
-	font-size: 85px;
-	margin-top: 48px;
-	margin-right: 57px;
-	
-}
+
 .service-content {
 	padding-left: 52px;
 	padding-bottom: 46px;
@@ -420,6 +450,8 @@ header {
 	width: 100%;
 	max-width: 370px;
 	color: #555555;
+	overflow: hidden;
+	
 }
 .news-detail a {
 	color: #555555;
@@ -436,10 +468,21 @@ header {
 .news-detail:nth-child(3) {
 	margin-right: 0px;
 }
-.news-detail img {
+.wrap-content-news-img {
+	height: 220px;
+    overflow: hidden;
+    width: 100%;
+}
+.wrap-content-news-img img {
 	width: 100%;
 	max-width: 370px;
 	margin-bottom: 24px;
+	overflow: hidden;
+	transition: 0.5s all ease-in-out;
+}
+.wrap-content-news-img img:hover {
+	/*transform: scale(0.8);*/
+	transform: scale(1.1);
 }
 
 .news-detail-header {
@@ -473,7 +516,6 @@ header {
 	border-top: 1px solid #E0E0E0;
 }
 .news-calendar {
-	margin-top: 20px;
 	display: flex;
 	align-items: center;
 }
@@ -487,6 +529,7 @@ header {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
+	margin-top: 20px;
 }
 .news-more {
 	margin-top: 25px;
@@ -545,28 +588,70 @@ header {
 .customer-detail {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
-.customer-detail img {
+.wrap-thumbnail {
+	display: flex!important;
+	justify-content: center;
+    align-items: center;
+}
+.wrap-thumbnail-left {
+	margin-right: 40px;
+}
+.wrap-thumbnail-left img {
 	width: 100%;
 	max-width: 302px;
-	margin-right: 68px;
+	margin-bottom: 20px;
+}
+.wrap-thumbnail-left .insert-info {
+	width: 164px;
+    max-width: 203px;
+    margin-top: -50px;
+    margin-left: 1.2%;
+	background-color: #265BC5;
+	position: absolute;
+}
+.wrap-thumbnail-left .insert-info p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #F8F8F8;
 }
 .content-customer {
 	display: flex;
 }
 .slick-dots {
-	text-align: left !important;
-	margin-left: 68px !important;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+	
 }
 
-.customer-detail-content::before {
-  	content: "“";
-    font-family: 'Roboto', sans-serif;
-    color: #EE1F23;
-    font-size: 120px;
-    line-height: 16px;
-    margin-top: -110px;
-    margin-right: 17px;
+.slider {
+    width: 70%!important;
+    /* margin: 100px auto; */
+}
+.regular {
+	width: 70%!important;
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 13px;
+    color: red!important;
+    border: 1px solid #1478d0;
+    border-radius: 50%;
+
+}
+.slick-active {
+	opacity: 1!important;
+}
+
+.thumbnail-content {
+	display: flex!important;
+	align-items: flex-start;
 }
 .customer-detail-content {
 	max-width: 524px;
@@ -580,11 +665,18 @@ header {
 	justify-content: center;
 	margin-top: 170px;
 	margin-bottom: 52px;
+	overflow: hidden;
 }
 .customer-footer img {
 	width: 100%;
 	max-width: 203px;
 	margin-right: 22px; 
+	transform: scale(1.0);
+  	transition: transform 0.2s;
+}
+.customer-footer img:hover {
+	transform: scale(1.15);
+
 }
 .customer-footer img:last-child {
 	margin-right: 0px;
@@ -620,6 +712,12 @@ header {
    align-items: center;
    justify-content: center;
    margin-right: 54px;
+   transition: 0.15s all ease;
+}
+
+.detail-footer-contact:hover {
+ transform: scale(1.2);
+  
 }
 .detail-footer-contact:last-child {
 	 margin-right: 0px;
@@ -646,6 +744,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	border-bottom: 1px solid #D7D7D7;
+	padding-bottom: 54px;
 }
 .left-more-footer {
 	width: 402px;
@@ -653,8 +752,8 @@ header {
 	padding-top: 42px;
 }
 .left-more-footer img {
-	width: 100%;
-	max-width: 169px;
+	width: 80%;
+	max-width: 120px;
 	margin-bottom: 40px;
 }
 .title-left-footer {
@@ -690,16 +789,47 @@ header {
 }
 .center-more-footer ul li {
 	color: #EE1F23;
+	padding-bottom: 20px;
 }
 .center-more-footer ul li a {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 19px;
 	color: #505050;
+	transition: opacity .5s ease-out;
+	padding-bottom: 20px;
 }
 .right-more-footer {
 	width: 270px;
 	padding-top: 104px;
+}
+.area-formSearch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 20px;
+	width: 250px;
+	max-width: 250px;
+}
+.area-formSearch input {
+	width: 100%;
+    height: 40px;
+    padding: 0 30px 0 5px;
+}
+.area-formSearch a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: white;
+    transition: opacity .5s ease-out;
+}
+.area-formSearch a:hover {
+	opacity: 0.6;
 }
 .title-form-footer {
 	display: block;
@@ -721,15 +851,18 @@ header {
 .container-end-footer {
 	display: flex;
 	justify-content: center;
+
 }
 .container-end-footer a {
 	margin-bottom: 29.54px;
 	margin-right: 64px;
-	margin-top: 55px;
-	margin-bottom: 42px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease 0s, opacity 0.3s ease 0.3s;
 }
 .container-end-footer a:hover {
 	opacity: 0.6;
+	transform: rotate(45deg);
 }
 .container-end-footer img {
 	width: 100%;
