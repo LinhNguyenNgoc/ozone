@@ -63,6 +63,8 @@ img {
 		flex-direction: column;
 		text-align: center;
 		display: none;
+		position: absolute;
+    width: 100%;
 	}
 
 	.info-menu-mb ul {

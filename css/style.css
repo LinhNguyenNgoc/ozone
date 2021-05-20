@@ -149,7 +149,7 @@ header {
 .info-menu ul li a {
 	text-decoration: none;
 	color: white;
-	font-family: Muli;
+	font-family: 'Mulish', sans-serif;
 	font-size: 14px;	
 }
 .info-menu ul li a:after {
@@ -168,7 +168,7 @@ header {
 
 .info-slider {
 	margin-top: 98px;
-	margin-left: 130px;
+	margin-left: 16%;
 	color: white;
 	width: 738px;
 }
@@ -239,7 +239,7 @@ header {
 	background-color: #EE1F23;
 	color: white;
 	font-size: 16px;
-	transition: opacity .5s ease-out;
+	transition: 0.5s;
 }
 .button-custom:hover {
 	opacity: 0.6;
@@ -316,7 +316,7 @@ header {
     max-width: 327px;
     position: absolute;
     margin-top: -140px;
-    margin-left: 341px;
+    margin-left: 31%;
 }
 .add-content p {
 	font-size: 20px;
@@ -458,11 +458,12 @@ header {
 }
 .news-detail:hover {
 	box-shadow: 0px 0px 30px rgba(103, 92, 92, 0.25);
-	opacity: 0.6;
+	transition: 1s;
 }
-.news-detail a:hover {
+.news-detail a:hover img{
 	color: #555555;
 	text-decoration: none;
+transform: scale(1.1);
 }
 
 .news-detail:nth-child(3) {

@@ -127,7 +127,7 @@
 			<a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 			<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 		</div>
-		<a href="#" id="aboutUsLink"><div class="header-scroll">
+		<a href="#" id="left-aboutLink"><div class="header-scroll">
              <img src="images/nav-down.svg" alt="">
          </div></a>
 	</header>
@@ -164,9 +164,9 @@
 			</div>
 		</div>
 	</header>
-	<section id="aboutUs" class="about-us wow fadeInUp" data-wow-duration="1.5s">
-		<div class="container">
-			<div class="left-about">
+	<section  class="about-us wow fadeInUp" data-wow-duration="1.5s">
+		<div class="container" id="aboutUs">
+			<div class="left-about" >
 				<img src="images/aboutUs.jpg" alt="">
 			</div>
 			<div class="right-about">
@@ -459,14 +459,14 @@
 
 	    function goToByScroll(id) {
 		    // Remove "link" from the ID
-		    id = id.replace("link", "");
+		    id = id.replace("Link", "");
 		    // Scroll
 		    $('html,body').animate({
-		        scrollTop: $("#" + id).offset().top
+		        scrollTop: $("." + id).offset().top
 		    }, 'slow');
 		}
 
-		$("#aboutUsLink").click(function(e) {
+		$("#left-aboutLink").click(function(e) {
 		    // Prevent a page reload when a link is pressed
 		    e.preventDefault();
 		    // Call the scroll function
